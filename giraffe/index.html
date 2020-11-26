@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>GIRAFFE: Representing Scenes as Compositional Generative Neural Feature Fields</title>
+  </head>
+  <body>
+    <div class="container">
+      <br>
+      <div style="text-align: center;">
+        <h1>GIRAFFE</h1>
+        <h3>Representing Scenes as Compositional Generative Neural Feature Fields</h3>
+        <div style="margin-bottom: 10px;">
+          <span style="margin-right: 10px; font-size: 1.2em;">Michael Niemeyer</span> <span style="font-size: 1.2em;">Andreas Geiger</span>
+        </div>
+        <div>
+          <span style="margin-right: 10px; font-size: 1.2em;">Max Planck Institute for Intelligent Systems and University of Tübingen</span>
+        </div>
+      </div>
+      <div class="text-center" style="margin-top: 60px; margin-bottom: 60px;">
+        <img src="gfx/overview.svg" width=60% class="img-fluid" alt="Responsive image">
+      </div>
+      <div>
+        <h2 class="text-center">
+          Abstract
+        </h2>
+        <p>
+          Deep generative models allow for photorealistic image synthesis at high resolutions. But for many applications, this is not enough: content creation also needs to be controllable. While several recent works investigate how to disentangle underlying factors of variation in the data, most of them operate in 2D and hence ignore that our world is three-dimensional. Further, only few works consider the compositional nature of scenes. Our key hypothesis is that incorporating a compositional 3D scene representation into the generative model leads to more controllable image synthesis. Representing scenes as compositional generative neural feature fields allows us to disentangle one or multiple objects from the background as well as individual objects' shapes and appearances while learning from unstructured and unposed image collections without any additional supervision. Combining this scene representation with a neural rendering pipeline yields a fast and realistic image synthesis model. As evidenced by our experiments, our model is able to disentangle individual objects and allows for translating and rotating them in the scene as well as changing the camera pose. 
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-12 gallery">
+          <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="gfx/clevr/2dgan.mp4"></iframe>
+        </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12 gallery">
+          <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="gfx/clevr/ours.mp4"></iframe>
+        </div>
+        </div>
+      </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
